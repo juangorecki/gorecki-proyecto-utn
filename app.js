@@ -11,6 +11,7 @@ var especialidadesRouter = require('./routes/especialidades')
 var trabajosRouter = require('./routes/trabajos')
 var contactanosRouter = require('./routes/contactanos')
 var novedadesRouter = require('./routes/novedades')
+var loginRouter = require('./routes/admin/login');
 
 
 
@@ -31,6 +32,7 @@ app.use('/especialidades', especialidadesRouter);
 app.use('/trabajos', trabajosRouter);
 app.use('/contactanos', contactanosRouter);
 app.use('/novedades', novedadesRouter)
+app.use('/admin/login', loginRouter)
 
 
 // catch 404 and forward to error handler
