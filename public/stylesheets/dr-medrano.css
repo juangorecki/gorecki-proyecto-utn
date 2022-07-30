@@ -480,3 +480,16 @@ hr{
     text-decoration: underline #65D0D1;
     
 }
+.title{
+    color: #598CA7;
+}
+
+.nov-titulo{
+    color: #548CAB;
+    border-bottom: #d1dfe6 solid 2px;
+    padding-bottom: 3px;
+}
+
+.subtitle{
+    color: #0E7DA3;
+}
