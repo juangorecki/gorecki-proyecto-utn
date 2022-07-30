@@ -472,3 +472,11 @@ hr{
     color: #548CAB;
     border-bottom: #65D0D1 solid 2px;
 }
+
+.mensaje-correcto{
+    color: #548CAB;
+    margin-top: 8px;
+    font-size: 20px;
+    text-decoration: underline #65D0D1;
+    
+}
