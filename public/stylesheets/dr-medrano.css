@@ -2,7 +2,7 @@
 body {
     font-family: 'Mulish', sans-serif;
     font-size: 1.1rem;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 header {
@@ -75,8 +75,26 @@ nav ul li a.activo {
     margin: 0 auto;
 }
 
+.homeimg3{
+    flex-direction: row;
+}
+
+.holder-index{
+        max-width: 960px;
+        margin: 0 auto;
+    
+}
+
 .home {
     display: flex;
+}
+
+.home img{
+    position: relative;
+    left: 22%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 52%;
 }
 
 .texto {
@@ -116,56 +134,58 @@ nav ul li a.activo {
     transition: all 1s ease;
 }
 
+.especialidades{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.9rem;
 
-
-.especialidad p{
-    font-size: 19px;
+    
 }
 
+.especialidad{
+    border: solid #0E7DA3;
+    margin-top: 1rem;
+    border-radius: 1.1rem;
+    border-width: 0.2rem;
+    width: 28%;
+    text-align: center;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    transition: all 1.5s ease;
+    background-color: #7d9ba9;
+    
+}
+
+.especialidades-inicio h1{
+    padding-bottom: 0.4rem;
+    border-bottom: #598CA7 solid 0.2rem;
+}
+
+
 .especialidad h2{
-    color: #548CAB;
-    border: 4px solid #7d9ba9;
-    border-radius: 10px;
-    padding: 14px;
-    text-align:center;
-    margin: 15px;
-    line-height: 25px;
+    color: white;
+    text-decoration: underline #0E7DA3 2px;
     transition: all 1.5s ease;
 }
 
 .especialidad p{
     color: white;
-    background-color: #598CA7;
-    border: 5px solid #d1dfe6;
-    padding: 6px;
-    height: 13rem;
-    transition: all 1.6s ease;
+    transition: all 1.5s ease;
 }
 
-.especialidades{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between; 
-    margin-bottom: 50px;
-    margin-top: 50px;
-   
-}
-.especialidad{
-    width: 25%;  
-    box-sizing: border-box;
-}
-
-.especialidad h2:hover{
-    color: white;
-    background-color: #7d9ba9;
-    transition: ease 1.5s;
-    border-radius: 50%;
+.especialidad:hover{
+    background-color: #0E7DA3;
+    color: #65D0D1;
 }
 
 .especialidad p:hover{
-    transition: ease 1.6s;
-    transform: scale(1.1);
+    color: #65D0D1;
+    /* background-color: #0E7DA3; */
+
 }
+
+
+
 
 .works{
     color: #598CA7;
@@ -185,26 +205,30 @@ h1{
 
 }
 .dientes{
-    display: flex;
-    gap: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
 }
 
 .boca{
-   width: 350px;
-   border: 1px solid #ccc;
-   border-radius: 30px;
-   padding: 15px;
-   text-align: center;
-   transition: all 0.8s ease;
-   background-color: #d1dfe6;
-   cursor: pointer;
-   margin-left: 58px;
+    width: 139%;
+    border: 2px solid #0E7DA3;
+    border-radius: 30px;
+    padding: -1px;
+    text-align: center;
+    transition: all 0.8s ease;
+    background-color: #d1dfe6;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
 
 
 }
 
 .boca:hover{
     background-color: #7d9ba9;
+    border: #65D0D1 solid 2px;
 
 }
 .boca h2{
@@ -249,8 +273,8 @@ hr{
 .implante img{
     border-radius: 20px;
     padding: 10px;
-    width: 350px;
-    height: 200px;
+    width: 50%;
+    max-width: 50%;
     
 }
 .info h3{
@@ -292,8 +316,48 @@ hr{
     color: #77E4E5;
 }
 
+.info h3{
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
 .protesis{
-    padding: 30px;
+border: #598CA7 solid 3px;
+background-color: #d1dfe6;
+display: flex;
+align-items: center;
+gap: 15px;
+flex-direction: row-reverse;
+transition: all ease 1.5s;
+}
+
+.protesis img{
+    max-width: 66%;
+    width: 58%;
+    border-radius: 23%;
+    padding: 0.3rem;
+}
+.protesis:hover{
+    cursor: pointer;
+    background-color: #548CAB;
+    border: #77E4E5 solid 3px;
+    transition: all ease 1.5s;
+    
+
+}
+
+.protesis:hover h3{
+    color: white;
+   
+
+}
+
+.protesis:hover p{
+    color: #77E4E5;
+}
+
+.info h3{
+    font-size: 1.5rem;
+    margin-top: 30px;
 }
 
 
@@ -482,14 +546,291 @@ hr{
 }
 .title{
     color: #598CA7;
+    text-decoration: underline #65D0D1;
 }
 
 .nov-titulo{
     color: #548CAB;
     border-bottom: #d1dfe6 solid 2px;
     padding-bottom: 3px;
+    padding-left: 2%;
+}
+
+.novedades-responsive{
+    text-align: justify;
+
 }
 
 .subtitle{
     color: #0E7DA3;
+}
+
+.homeimg img{
+  border: #0E7DA3 solid 2px;
+}
+
+.justify-body{
+text-align: justify;
+}
+
+.homeimg2 img{
+    width: 960px;
+    max-width: 100%;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width:550px){
+    
+    .home{
+        flex-direction: column;
+        gap: 0.063rem;
+    }
+    .texto{
+    padding-top: 0.25rem;
+    font-size: 80%;
+    width: 70%;
+    position: relative;
+    right: 50%;
+    transform: translateX(60%);
+    display: inline-block;
+    width: 85%;
+
+    }
+
+    .home img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        width: 52%;
+    }
+
+    .mapa{
+        display: none;
+    }
+    .caballito{
+        display: none;
+    }
+    .flechas{
+        margin-left: 70%;
+    }
+    .cubo{
+        width: 70%;
+        margin-left: 15%;
+        
+    }
+
+    .datostexto h3{
+        font-size: 100%;
+    }
+
+    .datostexto ul li{
+        font-size: 0.938rem;
+        margin-left: -20%;
+        padding-top: 0px;
+    }
+    .homeimg img{
+        width: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-65%);
+        display: inline-block;
+        width: 46%;
+    }
+    .holder-index{
+        display: flex;
+        align-items: center;
+    }
+    .diente{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        width: 52%;
+    }
+    .nombre{
+        width: 25rem;
+        margin-left: 26%;
+        display: none;
+    }
+
+    header{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    nav{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    nav ul.holder{
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .homeimg2{
+        max-width: 100%;
+    }
+    holder-index{
+        padding-left: 0;
+        padding-right:0 ;
+        align-items: center;
+    }
+    .casita{
+        padding-left: 6%;
+    }
+    .novedades-responsive{
+        max-width: 960px;
+        margin: 0 auto;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: 80%;
+        text-align: justify;
+
+    }
+
+    .especialidades{
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-height: 50%;
+        
+    }
+
+    .especialidad h2{
+        font-size: 0.9rem;
+
+    }
+
+    .especialidad p{
+        font-size: 0.7rem;
+    }
+
+    .especialidad{
+        width: 45%;
+    }
+
+    .coronas h1{
+        font-size: 1.5rem;
+        line-height: normal;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        text-decoration: underline #7d9ba9;
+    }
+    .dientes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+    }
+
+    .boca img{
+        width: 105%;
+        max-width: 105%;
+    }
+
+    .boca {
+        width: 90%;
+        border: 2px solid #598CA7;
+        border-radius: 30px;
+        padding: 0.4rem; 
+        text-align: center;
+        transition: all 0.8s ease;
+        background-color: #d1dfe6;
+        cursor: pointer;
+        margin-left: 50%;
+        transform: translateX(-50%)
+    }
+
+    .boca h2{
+        font-size: 75%;
+        margin-top: -2px;
+    }
+
+    .works{
+        font-size: 1.3rem;
+        padding: 0.4rem;
+    }
+
+    .ejemplos h1{
+        margin-left: 0.3rem;
+        font-size: 1.9rem;
+    }
+
+    .implante img {
+        border-radius: 20px;
+        padding: 10px;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .implante{
+        flex-direction: column;
+    }
+
+    .protesis{
+        flex-direction: column;
+    }
+
+    .info p{
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        font-size: 80%;
+    }
+
+    .info h3{
+        max-width: 100%;
+        width: 100%;
+        font-size: 105%;
+    }
+    
+
+    .contacto{
+        flex-direction: column;
+    }
+
+    .datos ul li {
+        font-size: 1rem;
+        color: #598CA7;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+    }
+
+    .datos ul{
+    position: relative;
+    left: 50%;
+    transform: translateX(-65%);
+    display: inline-block;
+    
+    }
+    .formulario input[type="submit"] {
+        background-color: #598CA7;
+        box-shadow: 0 0 10px rgb(0 0 0 / 40%);
+        color: white;
+        font-size: 16px;
+        padding: 6px 20px;
+        width: auto;
+        position: relative;
+        left: 0.488rem;
+        cursor: pointer;
+    }
+
+
+   
+    
+
 }
